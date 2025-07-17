@@ -288,7 +288,7 @@ class UploadVideo {
         const welcomeButton: HTMLButtonElement = document.createElement("button") as HTMLButtonElement;
         welcomeButton.id = "welcome-confirm-button";
         welcomeButton.innerHTML = "Got it!";
-        welcomeLabel.innerHTML = "Awesome! Now that we've set our clips so they can match our fingers, we're ready to download our video for TickTok, Instagram, and Twitter! Click the download button and we'll guide you through the download!";
+        welcomeLabel.innerHTML = "Awesome! Now that we've set our clips so they can match our fingers, we're ready to download our video for TikTok, Instagram, and Twitter! Click the download button and we'll guide you through the download!";
 
         setTimeout(() => {
             this.openTutorialDownloadPopupModal(welcomeLabel.outerHTML + welcomeButton.outerHTML);
@@ -572,7 +572,7 @@ class UploadVideo {
                         window.location.href = "home.html?username=" + username;
                     }, 5000);
                 } else {
-                    creatingVideoText.innerHTML = 'Video processing failed. The something went wrond during the upload process.';
+                    creatingVideoText.innerHTML = 'Video processing failed. Something went wrong during the upload process.';
                     setTimeout(() => {
                         window.location.href = "home.html?username=" + username;
                     }, 5000);
